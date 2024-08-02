@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>SHRI LUXMI PRINT N PACK</title>
+</head>
+
+<body>
+
+    <!-- Top Navigation -->
+    <div class="navBar">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="logo">
+            <a href="index.html"><img src="images/images.png" alt="logo"></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <nav id="myNavbar" class="navbar navbar-default" role="navigation">
+            <div class="collapse navbar-collapse" id="menu-navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a href="index.html" data-toggle="dropdown" class="dropdown-toggle active">Home <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="divider"></li>
+                    <li><a href="index.html#about">About us</a></li>
+                    <li class="divider"></li>
+                    <li><a href="index.html#services">Services</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="index.html" data-toggle="dropdown" class="dropdown-toggle">Contact <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="contactmap.html">Contact us</a></li>
+                    <li class="divider"></li>
+                    <li><a href="feedbackform.html">Feedback</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-md-3">
+
+        </div>
+      </div>
+    </div>
+
+    <!--End Top Navigation-->
+  <div class="container">
+    <div class="main">
+      <div class="intro">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <h1>Customer Experience Feedback Forms</h1>
+            <h4>Dear esteemed customer, <br>We'll highly appreciate your feedback</h4>
+          </div>
+          <div class="panel-body">
+            <div class="form-group">
+              <label for="name">Name*</label>
+              <input class="form-control" type="text" id="customerName" placeholder="Enter Your Name" />
+            </div>
+            <div class="form-group">
+              <label for="name">Email*</label>
+              <input class="form-control" type="text" id="customerEmail" placeholder="Enter Your Email" />
+            </div>
+            <div class="form-group">
+              <label for="name">Phone Number*</label>
+              <input class="form-control" type="number" id="customerNumber" placeholder="Enter Your PhoneNumber" />
+            </div>
+            <label for="exam">Date services were offered:</label>
+            <input id="exam" class="form-control" type="date" />
+            <br>
+            <button id="start-btn" class="btn">Go to form</button>
+            <p id="no-details">
+              DETAILS <strong>MUST</strong> BE ENTERED.
+              <em>NOTE:Details are strictly confidential</em>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="feedback">
+        <div class="panel panel-info">
+          <div class="panel-body">
+            <div class="questions">
+              <p>1:How would you rate us</p>
+
+              <form id="ratingForm">
+                <fieldset class="rating">
+                  <input type="radio" id="star5" name="rating" value="5" /><label for="star5">5 stars</label>
+                  <input type="radio" id="star4" name="rating" value="4" /><label for="star4">4 stars</label>
+                  <input type="radio" id="star3" name="rating" value="3" /><label for="star3">3 stars</label>
+                  <input type="radio" id="star2" name="rating" value="2" /><label for="star2">2 stars</label>
+                  <input type="radio" id="star1" name="rating" value="1" /><label for="star1">1 star</label>
+                </fieldset>
+                <br>
+                <div id="status"></div>
+                <br>
+                <div class="clearfix"></div>
+                <button class="submit clearfix">Click here to rate✨</button>
+              </form>
+
+              <br>
+              
+             
+              <div class="question3">
+                <p>2:Would you recommend this company to your friends?</p>
+
+                <div class="answer">
+                  <div class="form-group">
+                    <label for="recommend" class="container">
+                      <input value="yes" type="radio" name="recommend" id="yes" checked="checked" />
+                      <span class="checkmark"></span>Yes,I loved your services</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="no" class="container">
+                      <input value="no" type="radio" name="recommend" id="no" />
+                      <span class="checkmark"></span>No,the services are poor</label>
+
+                  </div>
+                  <div class="form-group">
+                    <label for="maybe" class="container">
+                      <input value="maybe" type="radio" name="recommend" id="maybe" />
+                      <span class="checkmark"></span>Maybe,I'm not sure</label>
+
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="question4">
+                <p>3:Would you use our services again? </p>
+                <div class="answer">
+                  <div class="form-group">
+                    <label for="recommend" class="container">
+                      <input value="yes" type="radio" name="redo" id="yes" checked="checked" />
+                      <span class="checkmark"></span>Yes,I loved your services</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="no" class="container">
+                      <input value="no" type="radio" name="redo" id="no" />
+                      <span class="checkmark"></span>No,the services are poor</label>
+
+                  </div>
+                  <div class="form-group">
+                    <label for="maybe" class="container">
+                      <input value="maybe" type="radio" name="redo" id="maybe" />
+                      <span class="checkmark"></span>Maybe,I'm not sure</label>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <button type="submit" id="finished" class="submit">Submit FeedBack Form</button>
+
+          </div>
+          <div class="thankyou">
+            <div class="panel panel-info">
+              <div class="panel-body">
+                <p id=thanks>Thankyou for you feedback</p>
+                <img src=https://emoji.gg/emoji/3264-thankyou>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div><!--End of Container-->
+  <!--Footer-->
+  <footer class="page-footer">
+    <div class="container-fluid">
+      <div class="panel panel-footer">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-image">
+              <img src="images/images.png" alt="LOGO"><br>
+            </div>
+            <div class="motto">
+              <p>Perfecting the Art of Quality Printing</p>
+            </div>
+
+          </div>
+
+          <div class="col-md-3">
+            <div class="company-text">
+              <p>We are proud of our achievements and pride ourselves on being a complete source for all of your printing needs and have always been on the edge of technology. We believe that investing in technology improves our efficiencies. We
+                are continuously coming up as a skilled, fast-moving team of professionals ready to learn from each other and meet the challenges to be successful.</p>
+            </div>
+          </div>
+          <!-- -->
+          <div class="col-md-3">
+            <div class="contact-info">
+              <h3>Visit us</h3>
+             
+                Mob:9899333447, 9311133447 <br>
+                Email: shriluxmi@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- -->
+          <div class="col-md-3">
+            
+              <div class="sitemap">
+                <h3>Site Map</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                 
+                  <li> <a href="#">Contact</a> </li>
+                </ul>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <!--Copyright-->
+        <div class="footer-copyright">© 2024 Copyright:
+          <a href="index.html"> Shri Luxmi Print N Pack</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!--Footer-->
+
+</body>
+
+</html>

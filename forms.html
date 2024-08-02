@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Executive Printing Works ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/forms.css" rel="stylesheet" type="text/css">
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+  <div class="logo">
+    <a href="index.html"><img src="images/images.png" alt="logo"></a>
+  </div>
+  <div class="topnav">
+    <div class="topnav-centered">
+      <a href="#">Order Online</a>
+      <a href="#home" class="active">Home</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  <div class="motto">
+    <p>Perfecting the Art of Quality Printing</p>
+  </div>
+
+
+  <div class="intro">
+    <h1>Customer Experience Feedback Forms</h1>
+    <h4>Dear esteemed customer,</h4>
+    <h4>We'll highly appreciate your feedback</h4>
+    <div class="form-group">
+      <label for="name">Name*</label>
+      <input class="form-control" type="text" id="customerName" placeholder="Enter Your Name" />
+    </div>
+    <div class="form-group">
+      <label for="name">Email*</label>
+      <input class="form-control" type="text" id="customerEmail" placeholder="Enter Your Email" />
+    </div>
+    <div class="form-group">
+      <label for="name">Phone Number*</label>
+      <input class="form-control" type="number" id="customerNumber" placeholder="Enter Your PhoneNumber" />
+    </div>
+    <label for="exam">Date services were offered:</label>
+    <input id="exam" class="form-control" type="date" />
+    <br>
+    <button id="start-btn" class="btn">Go to form</button>
+    <p id="no-details">
+      DETAILS <strong>MUST</strong> BE ENTERED.
+      <em>NOTE:Details are strictly confidential</em>
+
+    </p>
+  </div>
+  <div class="feedback">
+    <div class="questions">
+      <p>1:How would you rate us</p>
+
+      <form id="ratingForm">
+        <fieldset class="rating">
+          <input type="radio" id="star5" name="rating" value="5" /><label for="star5">5 stars</label>
+          <input type="radio" id="star4" name="rating" value="4" /><label for="star4">4 stars</label>
+          <input type="radio" id="star3" name="rating" value="3" /><label for="star3">3 stars</label>
+          <input type="radio" id="star2" name="rating" value="2" /><label for="star2">2stars</label>
+          <input type="radio" id="star1" name="rating" value="1" /><label for="star1">1 star</label>
+        </fieldset>
+        <br>
+        <div id="status"></div>
+        <br>
+        <div class="clearfix"></div>
+        <button class="submit clearfix">Click here to rate✨</button>
+      </form>
+
+      <br>
+      <p>2:Did you find our online services convinient?</p>
+      <P><em>*required if online services were used</em></P>
+      <button type=submit id="thumbsup">Yes</button>
+      <div class="thumbsup">
+        <img src="https://media.tenor.com/images/d9a67de0c7863d8755558798ce5289d5/tenor.gif" width=100px height=80px>
+      </div>
+      <button type=submit id="thumbsdown">No</button>
+      <div class="thumbsdown">
+        <img src="https://static1.squarespace.com/static/52f9c7fae4b0c9832bf23a80/5932fff1b8a79b17e22397d0/593303ade4fcb5fe43350386/1496515575701/356736577773.gif" width=50px height=80px>
+      </div>
+      <div class="suggestion">
+        <div class="suggest">
+          <label for="name">Suggestion*</label>
+          <input class="form-control" type="text" id="Suggest" placeholder="How can we improve our services" />
+        </div>
+      </div>
+      <br>
+      <div class="question3">
+        <p>3:Would you recommend this company to your friends?</p>
+
+        <div class="answer">
+          <div class="form-group">
+            <label for="recommend" class="container">
+              <input value="yes" type="radio" name="recommend" id="yes" checked="checked" />
+              <span class="checkmark"></span>Yes,I loved your services</label>
+          </div>
+          <div class="form-group">
+            <label for="no" class="container">
+              <input value="no" type="radio" name="recommend" id="no" />
+              <span class="checkmark"></span>No,the services are poor</label>
+
+          </div>
+          <div class="form-group">
+            <label for="maybe" class="container">
+              <input value="maybe" type="radio" name="recommend" id="maybe" />
+              <span class="checkmark"></span>Maybe,I'm not sure</label>
+
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="question4">
+        <p>4:Would you use our services again? </p>
+        <div class="answer">
+          <div class="form-group">
+            <label for="recommend" class="container">
+              <input value="yes" type="radio" name="redo" id="yes" checked="checked" />
+              <span class="checkmark"></span>Yes,I loved your services</label>
+          </div>
+          <div class="form-group">
+            <label for="no" class="container">
+              <input value="no" type="radio" name="redo" id="no" />
+              <span class="checkmark"></span>No,the services are poor</label>
+
+          </div>
+          <div class="form-group">
+            <label for="maybe" class="container">
+              <input value="maybe" type="radio" name="redo" id="maybe" />
+              <span class="checkmark"></span>Maybe,I'm not sure</label>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <button type="submit" id="finished" class="submit">Submit FeedBack Form</button>
+
+  </div>
+  <div class="thankyou">
+    <p id=thanks>Thankyou for you feedback</p>
+    <img src="https://www.amazing-animations.com/animations/thanks18.gif">
+  </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

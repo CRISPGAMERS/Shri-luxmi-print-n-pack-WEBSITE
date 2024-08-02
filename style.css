@@ -1,0 +1,35 @@
+#map{
+	height: 400px;
+	width: 100%;
+}
+body{
+	background:#ACD7E5;
+}
+.address-icon i{
+	font-size: 36px;
+	line-height: 32px;
+}
+.icons i{
+	color: #fff;
+	padding: 8px 0px;
+	text-align: center;
+	height: 30px;
+	width: 30px;
+	margin-right: 5px;
+}
+.fa-facebook{
+	background-color: #3A5A99;
+}
+.fa-twitter{
+	background-color: #39CBFA;
+}
+.fa-linkedin{
+	background-color: #3D99C0;
+}
+.fa-github{
+	background-color: #000;
+}
+#map{
+	height: 250px;
+	width: 100%;
+}

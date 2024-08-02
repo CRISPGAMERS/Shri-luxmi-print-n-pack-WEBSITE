@@ -1,0 +1,67 @@
+body {
+  /* These styles have nothing to do with the menu */
+  background: url(../images/press_bg.jpg);
+  padding: 35px 0 0;
+  margin: auto;
+  text-align: center;
+}
+
+.container .menu {
+  display: inline-block;
+}
+
+.menu:after, .menu:before {
+  margin-top: 0.5em;
+  content: "";
+  float: left;
+  border: 1.5em solid #fff;
+}
+
+.menu:after {
+  border-right-color: transparent;
+}
+
+.menu:before {
+  border-left-color: transparent;
+}
+
+.menu a:link, .menu a:visited {
+  color: #000;
+  text-decoration: none;
+  float: left;
+  height: 3.5em;
+  overflow: hidden;
+}
+
+.menu span {
+  background: #fff;
+  display: inline-block;
+  line-height: 3em;
+  padding: 0 1em;
+  margin-top: 0.5em;
+  position: relative;
+  transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.menu a:hover span {
+  background: #FFD204;
+  margin-top: 0;
+}
+
+.menu span:before {
+  content: "";
+  position: absolute;
+  top: 3em;
+  left: 0;
+  border-right: 0.5em solid #9B8651;
+  border-bottom: 0.5em solid #fff;
+}
+
+.menu span:after {
+  content: "";
+  position: absolute;
+  top: 3em;
+  right: 0;
+  border-left: 0.5em solid #9B8651;
+  border-bottom: 0.5em solid #fff;
+}

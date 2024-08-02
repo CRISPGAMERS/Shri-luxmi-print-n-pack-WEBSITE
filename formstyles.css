@@ -1,0 +1,16 @@
+.page-footer {
+  /* position: fixed; */
+  position: relative;
+  bottom: 0;
+  margin-bottom: 50px;
+
+}
+.formBody{
+  margin-top:100px;
+}
+.panel-heading{
+  background-color: #FCBA8F  ;
+}
+#placeOrder, #requestQuote{
+  display:none;
+}
